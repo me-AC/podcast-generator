@@ -2,10 +2,10 @@ FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y \
   python3.10 \
-  python3-pip \
   build-essential \
   git
 
+RUN apt install python3.10-pip
 RUN pip3 install --break-system-packages PyYAML
 
 COPY feed.py /usr/bin/feed.py
