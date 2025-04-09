@@ -1,10 +1,8 @@
 FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y \
-  python3-full \
+  python3.10 \
   python3-pip \
-  build-essential \
-  libyaml-dev \
   git
 
 RUN pip3 install PyYAML
